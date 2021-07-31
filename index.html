@@ -5,14 +5,27 @@
         <title> Gitiin Going </title>
     </head>
     <body>
-        <h2> Languages I Know </h2>
-        <ol>
-            <li> English </li>
-            <li>Somali </li>
-            <li>Arabic </li>
-        </ol>
-        <p> My Name Is Safa </p> 
-        <a href="https://firstgenscholars.com" target="_blank"> First Gen Scholars</a>
-        <img id="firstGenGirl" src="https://images.squarespace-cdn.com/content/v1/5d97be9d4c8a2c3525ad0383/1592885211231-HEDDETMELTTACO6U3CEY/FirstGen-142.jpg?format=750w" alt="First gen photo">
+        <div class="center"> 
+            <h2> Languages I Know </h2>
+            <ol>
+                <li> English </li>
+                <li>Somali </li>
+                <li>Arabic </li>
+            </ol>
+            <p> My Name Is <span id= "safa">Safa</span> </p> 
+            <button id= "colorChanger"> change colors </button> 
+            <script> 
+                var safa = document.getElementById("safa"); 
+                document.getElementById("colorChanger").addEventListener("click", change, false);
+                var colors = ["black", "white", "green","blue", "orange", "yellow"];
+                function change() {
+                    var color = colors[Math.floor(Math.random() * colors.length)];
+                    safa.style.setProperty("color", color);
+                }
+            </script>
+            <a href="https://firstgenscholars.com" target="_blank"> First Gen Scholars</a>
+            <img id="firstGenGirl" src="https://images.squarespace-cdn.com/content/v1/5d97be9d4c8a2c3525ad0383/1592885211231-HEDDETMELTTACO6U3CEY/FirstGen-142.jpg?format=750w" alt="First gen photo">
+        </div>
+        
     </body>
 </html>   

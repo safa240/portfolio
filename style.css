@@ -2,4 +2,11 @@
  width: 150px;
  height: 250px;  
  display: block;
+} 
+body {
+    background-color: rgb(122, 3, 3);
+}
+.center {
+    width:300px ;
+    margin: auto
 }
